@@ -4,6 +4,11 @@ let numberImp = prompt("Enter the number you'd like to convert to Roman Numerals
 //Make sure user input is converted to a number
 numberImp = Number(numberImp);
 
+//If the input string can't be converted, ask again for a number input
+while(isNaN(numberImp)){
+  numberImp = prompt("That was NOT a number.\n Enter a number you'd like to convert to Roman Numerals:\n")
+}
+
 //Make some arrays to hold information
 let numMerals =[]
 let symbols = ['M','D','C','L','X','V','I'];
